@@ -21,8 +21,8 @@ const theme = extendTheme({
         },
     },
     fonts: {
-        heading: "Fira Code",
-        body: "Bayon",
+        heading: "Allura",
+        body: "Poppins",
     },
 });
 
