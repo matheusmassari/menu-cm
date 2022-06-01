@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import { Box, Link, VStack, Text, Image, Center, calc } from "@chakra-ui/react";
+import {
+    Box,
+    Link,
+    VStack,
+    Text,
+    Image,
+    Center,
+    calc,
+    Heading,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import Head from "next/head";
-import "@fontsource/allura";
 
 const Principal = () => {
     const [textColor, setTextColor] = useState("#f5f5dc");
@@ -14,8 +22,6 @@ const Principal = () => {
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
     const diaHoje = today.toDateString();
-    
-    
 
     return (
         <>
@@ -38,84 +44,56 @@ const Principal = () => {
                 <VStack spacing={3} mt="2rem">
                     <NextLink href="entradas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text
-                                color={textColor}
-                                fontSize={"4xl"}
-                                fontFamily="Allura"
-                            >
+                            <Heading color={textColor} fontSize={"4xl"}>
                                 Entradas
-                            </Text>
+                            </Heading>
                         </Link>
                     </NextLink>
                     {diaHoje[0] === "F" ? (
                         <NextLink href="sexta" passHref>
                             <Link style={{ textDecoration: "none" }}>
-                                <Text
-                                    color={textColor}
-                                    fontSize={"4xl"}
-                                    fontFamily="Allura"
-                                >
+                                <Heading color={textColor} fontSize={"4xl"}>
                                     Pratos Principais
-                                </Text>
+                                </Heading>
                             </Link>
                         </NextLink>
                     ) : (
                         <>
                             <NextLink href="moquecas" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Text
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        fontFamily="Allura"
-                                    >
+                                    <Heading color={textColor} fontSize={"4xl"}>
                                         Moquecas
-                                    </Text>
+                                    </Heading>
                                 </Link>
                             </NextLink>
                             <NextLink href="peixes-frutos-mar" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Text
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        fontFamily="Allura"
-                                    >
+                                    <Heading color={textColor} fontSize={"4xl"}>
                                         Peixes e Frutos do Mar
-                                    </Text>
+                                    </Heading>
                                 </Link>
                             </NextLink>
                             <NextLink href="carnes-aves-risotos" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Text
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        fontFamily="Allura"
-                                    >
+                                    <Heading color={textColor} fontSize={"4xl"}>
                                         Carnes, Aves e Risotos
-                                    </Text>
+                                    </Heading>
                                 </Link>
                             </NextLink>
                         </>
                     )}
                     <NextLink href="bebidas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text
-                                color={textColor}
-                                fontSize={"4xl"}
-                                fontFamily="Allura"
-                            >
+                            <Heading color={textColor} fontSize={"4xl"}>
                                 Bebidas
-                            </Text>
+                            </Heading>
                         </Link>
                     </NextLink>
                     <NextLink href="sobremesas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text
-                                color={textColor}
-                                fontSize={"4xl"}
-                                fontFamily="Allura"
-                            >
+                            <Heading color={textColor} fontSize={"4xl"}>
                                 Sobremesas
-                            </Text>
+                            </Heading>
                         </Link>
                     </NextLink>
                 </VStack>

@@ -10,8 +10,7 @@ import {
     Text,
     Heading,
 } from "@chakra-ui/react";
-import "@fontsource/poppins";
-import "@fontsource/allura";
+
 
 const Sobremesas = () => {
     const { sobremesas } = CARDAPIO;
