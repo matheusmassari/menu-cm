@@ -769,4 +769,48 @@ export const CARDAPIO = {
             categoria: "kids",
         },
     ],
+    sexta: [
+        {
+            id: 1,
+            titulo: "Risoto de Camarão com Rúcula e Manga",
+            desc: "",
+            valor: 65,
+            categoria: "semana",
+        },
+        {
+            id: 1,
+            titulo: "Fettucine na Manteiga de Camarão",
+            desc: "",
+            valor: 65,
+            categoria: "semana",
+        },
+        {
+            id: 1,
+            titulo: "Orichette ao Molho de Frutos do Mar com Camarões Brancos",
+            desc: "Deliciosa massa 'Grano Duro', servida com molho a base de creme de leite e frutos do mar",
+            valor: 80,
+            categoria: "semana",
+        },
+        {
+            id: 1,
+            titulo: "Filé Mignon ao Molho Gorgonzola",
+            desc: "Para duas pessoas: R$ 120",
+            valor: 65,
+            categoria: "semana",
+        },
+        {
+            id: 1,
+            titulo: "Filé de Peixe ao Molho de Abacaxi com Alcaparras",
+            desc: "Filé de peixe fresco servido com delicioso molho a base de creme de leite, abacaxi e alcaparras - acompanha arroz branco e batatas salteadas. Para duas pessoas: R$ 120",
+            valor: 65,
+            categoria: "semana",
+        },
+        {
+            id: 1,
+            titulo: "Camarão ao Molho Tailandês",
+            desc: "Camarões frescos servidos com delicioso molho a base de funghi, shoyu, manjericão e gengibre - acompanha arroz de coco e fatias de manga",
+            valor: 65,
+            categoria: "semana",
+        },
+    ],
 };

@@ -11,6 +11,12 @@ const Principal = () => {
 
     let ano = new Date().getFullYear();
 
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    const diaHoje = today.toDateString();
+    
+    
+
     return (
         <>
             <Head></Head>
@@ -32,43 +38,82 @@ const Principal = () => {
                 <VStack spacing={3} mt="2rem">
                     <NextLink href="entradas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
+                            <Text
+                                color={textColor}
+                                fontSize={"4xl"}
+                                fontFamily="Allura"
+                            >
                                 Entradas
                             </Text>
                         </Link>
                     </NextLink>
-                    <NextLink href="moquecas" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
-                                Moquecas
-                            </Text>
-                        </Link>
-                    </NextLink>
-                    <NextLink href="peixes-frutos-mar" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
-                                Peixes e Frutos do Mar
-                            </Text>
-                        </Link>
-                    </NextLink>
-                    <NextLink href="carnes-aves-risotos" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
-                                Carnes, Aves e Risotos
-                            </Text>
-                        </Link>
-                    </NextLink>
-
+                    {diaHoje[0] === "F" ? (
+                        <NextLink href="sexta" passHref>
+                            <Link style={{ textDecoration: "none" }}>
+                                <Text
+                                    color={textColor}
+                                    fontSize={"4xl"}
+                                    fontFamily="Allura"
+                                >
+                                    Pratos Principais
+                                </Text>
+                            </Link>
+                        </NextLink>
+                    ) : (
+                        <>
+                            <NextLink href="moquecas" passHref>
+                                <Link style={{ textDecoration: "none" }}>
+                                    <Text
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        fontFamily="Allura"
+                                    >
+                                        Moquecas
+                                    </Text>
+                                </Link>
+                            </NextLink>
+                            <NextLink href="peixes-frutos-mar" passHref>
+                                <Link style={{ textDecoration: "none" }}>
+                                    <Text
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        fontFamily="Allura"
+                                    >
+                                        Peixes e Frutos do Mar
+                                    </Text>
+                                </Link>
+                            </NextLink>
+                            <NextLink href="carnes-aves-risotos" passHref>
+                                <Link style={{ textDecoration: "none" }}>
+                                    <Text
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        fontFamily="Allura"
+                                    >
+                                        Carnes, Aves e Risotos
+                                    </Text>
+                                </Link>
+                            </NextLink>
+                        </>
+                    )}
                     <NextLink href="bebidas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
+                            <Text
+                                color={textColor}
+                                fontSize={"4xl"}
+                                fontFamily="Allura"
+                            >
                                 Bebidas
                             </Text>
                         </Link>
                     </NextLink>
                     <NextLink href="sobremesas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Text color={textColor} fontSize={"4xl"} fontFamily='Allura'>
+                            <Text
+                                color={textColor}
+                                fontSize={"4xl"}
+                                fontFamily="Allura"
+                            >
                                 Sobremesas
                             </Text>
                         </Link>
