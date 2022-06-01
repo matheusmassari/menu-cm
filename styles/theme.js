@@ -6,6 +6,17 @@ const theme = extendTheme({
             html: {
                 scrollBehavior: "smooth",
                 bgColor: "#f5f5dc",
+                // height: "100%",
+                // width: "100%",
+                // margin: "0",
+            },
+            body: {
+                // height: "100%",
+                // width: "100%",
+                // margin: "0",
+            },
+            "*": {
+                boxSizing: "border-box",
             },
         },
     },

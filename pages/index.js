@@ -1,7 +1,13 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import Principal from "./components/Principal";
 
 export default function Home() {
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    const diaHoje = today.toDateString();
+    
+
     return (
         <>
             <Head>
