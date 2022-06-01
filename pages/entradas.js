@@ -10,8 +10,8 @@ import {
     Text,
     Heading,
 } from "@chakra-ui/react";
-// import "@fontsource/poppins";
-// import "@fontsource/allura";
+import "@fontsource/poppins";
+import "@fontsource/allura";
 
 const Entradas = () => {
     const { entradas } = CARDAPIO;

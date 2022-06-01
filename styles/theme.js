@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, theme as base } from "@chakra-ui/react";
 
 const theme = extendTheme({
     styles: {
@@ -21,8 +21,8 @@ const theme = extendTheme({
         },
     },
     fonts: {
-        heading: "Allura",
-        body: "Poppins",
+        heading: `Allura, sans-serif, ${base.fonts?.heading}`,
+        body: `Poppins, ${base.fonts?.heading}`,
     },
 });
 
