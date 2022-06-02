@@ -9,6 +9,8 @@ import {
     Box,
     Text,
     Heading,
+    Center,
+    Image,
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
 
@@ -30,7 +32,7 @@ const Bebidas = () => {
 
                 <Accordion allowToggle>
                     {bebidas.map((entrada, index) => {
-                        const { titulo, valor, desc, categoria } = entrada;
+                        const { titulo, valor, desc, categoria, img } = entrada;
                         if (categoria === "bebidas") {
                             return (
                                 <AccordionItem
@@ -59,6 +61,16 @@ const Bebidas = () => {
                                     </AccordionButton>
 
                                     <AccordionPanel pb={4}>
+                                        <Center my="1rem">
+                                            <Image
+                                                src={img}
+                                                alt="bolinho"
+                                                boxSize="300px"
+                                                objectFit="cover"
+                                                borderRadius="8px"
+                                                border="2px solid #8E3200"
+                                            />
+                                        </Center>
                                         <Text
                                             color="black"
                                             fontFamily={"Poppins, sans-serif"}
@@ -81,7 +93,8 @@ const Bebidas = () => {
                 </Heading>
                 <Accordion allowToggle>
                     {bebidas.map((entrada, index) => {
-                        const { titulo, valor, desc, categoria } = entrada;
+                        const { titulo, valor, desc, categoria, img } = entrada;
+                        console.log(img)
                         if (categoria === "drinks") {
                             return (
                                 <AccordionItem key={index}>
@@ -109,6 +122,16 @@ const Bebidas = () => {
                                         </AccordionButton>
                                     </h2>
                                     <AccordionPanel pb={4}>
+                                        <Center my="1rem">
+                                            <Image
+                                                src={img}
+                                                alt="bolinho"
+                                                boxSize="300px"
+                                                objectFit="cover"
+                                                borderRadius="8px"
+                                                border="2px solid #8E3200"
+                                            />
+                                        </Center>
                                         <Text
                                             color="black"
                                             fontFamily={"Poppins, sans-serif"}
