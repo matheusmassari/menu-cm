@@ -24,6 +24,9 @@ const theme = extendTheme({
         heading: `Allura, sans-serif, ${base.fonts?.heading}`,
         body: `Poppins, ${base.fonts?.heading}`,
     },
+    defaultProps: {
+        focusBorderColor: "red.200",
+    },
 });
 
 export default theme;

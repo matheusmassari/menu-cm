@@ -6,17 +6,22 @@ import {
     Text,
     Image,
     Center,
-    calc,
+    HStack,
     Heading,
+    Icon,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import Head from "next/head";
+import { CgInstagram } from "react-icons/cg";
+import { BsWhatsapp } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Principal = () => {
     const [textColor, setTextColor] = useState("#f5f5dc");
     const [backgroundColor, setBackgroundColor] = useState("#d9ac8d");
     const [headingColor, setHeadingColor] = useState("#8E3200");
 
+    const MotionIcon = motion(Icon);
+    const MotionHeading = motion(Heading);
     let ano = new Date().getFullYear();
 
     const timeElapsed = Date.now();
@@ -25,7 +30,6 @@ const Principal = () => {
 
     return (
         <>
-            <Head></Head>
             <Box
                 h={"calc(100vh)"}
                 w={"100vw"}
@@ -36,87 +40,153 @@ const Principal = () => {
             >
                 <Center>
                     <Image
-                        w="15rem"
+                        w="12rem"
                         src="/massari-logo.png"
                         alt="lavender-top"
                     ></Image>
                 </Center>
-                <VStack spacing={3} mt="2rem">
+                <VStack spacing={3}>
                     <NextLink href="entradas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Heading color={textColor} fontSize={"4xl"}>
+                            <MotionHeading
+                                color={textColor}
+                                fontSize={"4xl"}
+                                whileTap={{ scale: 0.9 }}
+                            >
                                 Entradas
-                            </Heading>
+                            </MotionHeading>
                         </Link>
                     </NextLink>
                     {diaHoje[0] === "F" ? (
                         <NextLink href="sexta" passHref>
                             <Link style={{ textDecoration: "none" }}>
-                                <Heading color={textColor} fontSize={"4xl"}>
+                                <MotionHeading
+                                    color={textColor}
+                                    fontSize={"4xl"}
+                                    whileTap={{ scale: 0.9 }}
+                                >
                                     Pratos Principais
-                                </Heading>
+                                </MotionHeading>
                             </Link>
                         </NextLink>
                     ) : (
                         <>
                             <NextLink href="moquecas" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Heading color={textColor} fontSize={"4xl"}>
+                                    <MotionHeading
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
                                         Moquecas
-                                    </Heading>
+                                    </MotionHeading>
                                 </Link>
                             </NextLink>
                             <NextLink href="peixes-frutos-mar" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Heading color={textColor} fontSize={"4xl"}>
+                                    <MotionHeading
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
                                         Peixes e Frutos do Mar
-                                    </Heading>
+                                    </MotionHeading>
                                 </Link>
                             </NextLink>
                             <NextLink href="carnes-aves-risotos" passHref>
                                 <Link style={{ textDecoration: "none" }}>
-                                    <Heading color={textColor} fontSize={"4xl"}>
+                                    <MotionHeading
+                                        color={textColor}
+                                        fontSize={"4xl"}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
                                         Carnes, Aves e Risotos
-                                    </Heading>
+                                    </MotionHeading>
                                 </Link>
                             </NextLink>
                         </>
                     )}
                     <NextLink href="bebidas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Heading color={textColor} fontSize={"4xl"}>
+                            <MotionHeading
+                                color={textColor}
+                                fontSize={"4xl"}
+                                whileTap={{ scale: 0.9 }}
+                            >
                                 Bebidas
-                            </Heading>
+                            </MotionHeading>
                         </Link>
                     </NextLink>
                     <NextLink href="sobremesas" passHref>
                         <Link style={{ textDecoration: "none" }}>
-                            <Heading color={textColor} fontSize={"4xl"}>
+                            <MotionHeading
+                                color={textColor}
+                                fontSize={"4xl"}
+                                whileTap={{ scale: 0.9 }}
+                            >
                                 Sobremesas
-                            </Heading>
+                            </MotionHeading>
                         </Link>
                     </NextLink>
-                </VStack>
-                {/* <Center>
-                    <Image
-                        w="10rem"
-                        src="/lavander-bottom.svg"
-                        alt="lavender-top"
-                    ></Image>
-                </Center> */}
-                <Center>
-                    <Box px="1rem" mt="2rem">
-                        {" "}
-                        <Text
-                            fontFamily={"Poppins"}
-                            fontSize="0.65rem"
-                            color={headingColor}
+                    <HStack spacing={5}>
+                        <NextLink
+                            href="https://www.instagram.com/cozinhamassari/"
+                            passHref
                         >
-                            Designed & built by Matheus Massari Ⓒ {ano}
-                        </Text>
-                    </Box>
-                </Center>
+                            <Link style={{ textDecoration: "none" }}>
+                                <MotionIcon
+                                    w="14"
+                                    h="14"
+                                    color={textColor}
+                                    animate={{
+                                        translateX: [0, -5, 0],
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        times: [0, 0.2, 0.5, 0, 8, 1],
+                                        repeat: Infinity,
+                                        repeatDelay: 2,
+                                    }}
+                                >
+                                    <CgInstagram size={24} />
+                                </MotionIcon>
+                            </Link>
+                        </NextLink>
+                        <NextLink href="https://wa.me/5598981590459" passHref>
+                            <Link style={{ textDecoration: "none" }}>
+                                <MotionIcon
+                                    w="14"
+                                    h="14"
+                                    color={textColor}
+                                    animate={{
+                                        translateX: [0, 5, 0],
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        times: [0, 0.2, 0.5, 0, 8, 1],
+                                        repeat: Infinity,
+                                        repeatDelay: 2,
+                                    }}
+                                >
+                                    <BsWhatsapp size={24} />
+                                </MotionIcon>
+                            </Link>
+                        </NextLink>
+                    </HStack>
+                </VStack>
             </Box>
+            <Center>
+                <Box px="1rem" mt="-2rem">
+                    {" "}
+                    <Text
+                        fontFamily={"Poppins"}
+                        fontSize="0.65rem"
+                        color={headingColor}
+                    >
+                        Designed & built by Matheus Massari Ⓒ {ano}
+                    </Text>
+                </Box>
+            </Center>
         </>
     );
 };

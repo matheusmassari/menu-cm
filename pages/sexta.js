@@ -10,57 +10,65 @@ import {
     Text,
     Heading,
 } from "@chakra-ui/react";
-
+import MotionNavigation from "./components/MotionNav";
 
 const Sexta = () => {
     const { sexta } = CARDAPIO;
     return (
-        <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem">
-            <Heading
-                fontFamily={"Allura, sans-serif"}
-                color="#8E3200"
-                textAlign={"center"}
-                mb="2rem"
-            >
-                Sobremesas
-            </Heading>
-            <Accordion allowToggle>
-                {sexta.map((entrada, index) => {
-                    const { titulo, valor, desc, categoria } = entrada;
-                    return (
-                        <AccordionItem key={index}>
-                            <h2>
-                                <AccordionButton>
-                                    <Box flex="1" textAlign="left">
+        <>
+            <MotionNavigation />
+            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem">
+                <Heading
+                    fontFamily={"Allura, sans-serif"}
+                    color="#8E3200"
+                    textAlign={"center"}
+                    mb="2rem"
+                >
+                    Sobremesas
+                </Heading>
+                <Accordion allowToggle>
+                    {sexta.map((entrada, index) => {
+                        const { titulo, valor, desc, categoria } = entrada;
+                        return (
+                            <AccordionItem
+                                key={index}
+                                borderColor="rgba(182, 144, 119, 0.2)"
+                            >
+                                <h2>
+                                    <AccordionButton>
+                                        <Box flex="1" textAlign="left">
+                                            <Text
+                                                fontFamily={
+                                                    "Poppins, sans-serif"
+                                                }
+                                                color="#8E3200"
+                                            >
+                                                {titulo}
+                                            </Text>
+                                        </Box>
+                                        <AccordionIcon color="#d9ac8d" />
                                         <Text
                                             fontFamily={"Poppins, sans-serif"}
                                             color="#8E3200"
                                         >
-                                            {titulo}
+                                            {valor}
                                         </Text>
-                                    </Box>
-                                    <AccordionIcon color="#d9ac8d" />
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
                                     <Text
+                                        color="black"
                                         fontFamily={"Poppins, sans-serif"}
-                                        color="#8E3200"
                                     >
-                                        {valor}
+                                        {desc}
                                     </Text>
-                                </AccordionButton>
-                            </h2>
-                            <AccordionPanel pb={4}>
-                                <Text
-                                    color="black"
-                                    fontFamily={"Poppins, sans-serif"}
-                                >
-                                    {desc}
-                                </Text>
-                            </AccordionPanel>
-                        </AccordionItem>
-                    );
-                })}
-            </Accordion>
-        </Box>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        );
+                    })}
+                </Accordion>
+            </Box>
+        </>
     );
 };
 
