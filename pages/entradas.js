@@ -9,6 +9,8 @@ import {
     Box,
     Text,
     Heading,
+    Image,
+    Center,
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
 
@@ -28,7 +30,7 @@ const Entradas = () => {
                 </Heading>
                 <Accordion allowToggle>
                     {entradas.map((entrada, index) => {
-                        const { titulo, valor, desc, categoria } = entrada;
+                        const { titulo, valor, desc, categoria, img } = entrada;
                         return (
                             <AccordionItem
                                 key={index}
@@ -56,6 +58,17 @@ const Entradas = () => {
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4}>
+                                    <Center my="1rem">
+                                        <Image
+                                            src={img}
+                                            alt="bolinho"
+                                            boxSize="300px"
+                                            objectFit="cover"
+                                            borderRadius="8px"
+                                            border="2px solid #8E3200"
+                                        />
+                                    </Center>
+
                                     <Text
                                         color="black"
                                         fontFamily={"Poppins, sans-serif"}

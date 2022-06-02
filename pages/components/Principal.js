@@ -12,8 +12,9 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { CgInstagram } from "react-icons/cg";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp, BsPinMap } from "react-icons/bs";
 import { motion } from "framer-motion";
+
 
 const Principal = () => {
     const [textColor, setTextColor] = useState("#f5f5dc");
@@ -128,6 +129,7 @@ const Principal = () => {
                             </MotionHeading>
                         </Link>
                     </NextLink>
+
                     <HStack spacing={5}>
                         <NextLink
                             href="https://www.instagram.com/cozinhamassari/"
@@ -135,40 +137,66 @@ const Principal = () => {
                         >
                             <Link style={{ textDecoration: "none" }}>
                                 <MotionIcon
+                                    mt="0.5rem"
                                     w="14"
                                     h="14"
                                     color={textColor}
                                     animate={{
-                                        translateX: [0, -5, 0],
+                                        translateY: [0, 5, 0],
                                     }}
                                     transition={{
                                         duration: 1,
                                         times: [0, 0.2, 0.5, 0, 8, 1],
                                         repeat: Infinity,
-                                        repeatDelay: 2,
+                                        repeatDelay: 3.5,
                                     }}
                                 >
-                                    <CgInstagram size={24} />
+                                    <CgInstagram size={18} />
                                 </MotionIcon>
                             </Link>
                         </NextLink>
                         <NextLink href="https://wa.me/5598981590459" passHref>
                             <Link style={{ textDecoration: "none" }}>
                                 <MotionIcon
+                                    mt="0.5rem"
                                     w="14"
                                     h="14"
                                     color={textColor}
                                     animate={{
-                                        translateX: [0, 5, 0],
+                                        translateY: [0, 5, 0],
                                     }}
                                     transition={{
                                         duration: 1,
                                         times: [0, 0.2, 0.5, 0, 8, 1],
                                         repeat: Infinity,
-                                        repeatDelay: 2,
+                                        repeatDelay: 3.5,
                                     }}
                                 >
-                                    <BsWhatsapp size={24} />
+                                    <BsWhatsapp size={18} />
+                                </MotionIcon>
+                            </Link>
+                        </NextLink>
+                        <NextLink
+                            href="https://goo.gl/maps/wtU7SgtyR4rZaRreA"
+                            passHref
+                        >
+                            <Link style={{ textDecoration: "none" }} isExternal>
+                                <MotionIcon
+                                    mt="0.5rem"
+                                    w="14"
+                                    h="14"
+                                    color={textColor}
+                                    animate={{
+                                        translateY: [0, 5, 0],
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        times: [0, 0.2, 0.5, 0, 8, 1],
+                                        repeat: Infinity,
+                                        repeatDelay: 3.5,
+                                    }}
+                                >
+                                    <BsPinMap size={18} />
                                 </MotionIcon>
                             </Link>
                         </NextLink>

@@ -14,7 +14,7 @@ import {
     Heading,
     DrawerCloseButton,
     Link,
-    Button
+    Button,
 } from "@chakra-ui/react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -53,11 +53,10 @@ const variants = {
     },
 };
 
-
 const DrawerNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const MotionIcon = motion(Box)
+    const MotionIcon = motion(Box);
 
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
@@ -103,7 +102,7 @@ const DrawerNav = () => {
                                 left="5"
                                 top="5"
                                 as={GrLinkPrevious}
-                                color="orange.500"
+                                color="orange.800"
                             />
                         </Link>
                     </NextLink>
@@ -119,7 +118,7 @@ const DrawerNav = () => {
                                 <Link style={{ textDecoration: "none" }}>
                                     <Heading
                                         fontSize={"3xl"}
-                                        color="orange.500"
+                                        color="orange.800"
                                     >
                                         Entradas
                                     </Heading>
@@ -134,7 +133,7 @@ const DrawerNav = () => {
                                         >
                                             <Heading
                                                 fontSize={"3xl"}
-                                                color="orange.500"
+                                                color="orange.800"
                                             >
                                                 Pratos Principais
                                             </Heading>
@@ -149,7 +148,7 @@ const DrawerNav = () => {
                                         >
                                             <Heading
                                                 fontSize={"3xl"}
-                                                color="orange.500"
+                                                color="orange.800"
                                             >
                                                 Moquecas
                                             </Heading>
@@ -162,7 +161,7 @@ const DrawerNav = () => {
                                         >
                                             <Heading
                                                 fontSize={"3xl"}
-                                                color="orange.500"
+                                                color="orange.800"
                                             >
                                                 Peixes e Frutos do Mar{" "}
                                             </Heading>
@@ -178,7 +177,7 @@ const DrawerNav = () => {
                                         >
                                             <Heading
                                                 fontSize={"3xl"}
-                                                color="orange.500"
+                                                color="orange.800"
                                             >
                                                 Carnes, Aves e Risotos{" "}
                                             </Heading>
@@ -190,7 +189,7 @@ const DrawerNav = () => {
                                 <Link style={{ textDecoration: "none" }}>
                                     <Heading
                                         fontSize={"3xl"}
-                                        color="orange.500"
+                                        color="orange.800"
                                     >
                                         Bebidas{" "}
                                     </Heading>
@@ -201,7 +200,7 @@ const DrawerNav = () => {
                                 <Link style={{ textDecoration: "none" }}>
                                     <Heading
                                         fontSize={"3xl"}
-                                        color="orange.500"
+                                        color="orange.800"
                                     >
                                         Sobremesas{" "}
                                     </Heading>
