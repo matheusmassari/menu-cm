@@ -1,7 +1,10 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Image, Link } from "@chakra-ui/react";
 import { motion, useViewportScroll } from "framer-motion";
 import DrawerNav from "./DrawerNav";
+import NextLink from "next/link";
+
+const MotionImage = motion(Image);
 
 const MotionNav = motion(Box);
 
@@ -43,7 +46,17 @@ const MotionNavigation = () => {
                     maxWidth: "100%",
                 }}
             >
-                <div></div>
+                <NextLink href="/" passHref>
+                    <MotionImage
+                        w="8rem"
+                        ml="0.5rem"
+                        src="/massari-logo.png"
+                        whileHover={{ scale: 1.1, cursor: "pointer" }}
+                        alt="logomarca"
+                        whileTap={{ scale: 1.2 }}
+                    />
+                </NextLink>
+
                 <DrawerNav />
             </MotionNav>
         </Flex>

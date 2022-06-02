@@ -17,7 +17,13 @@ const Bebidas = () => {
     return (
         <>
             <MotionNavigation />
-            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem">
+            <Box
+                w="100%"
+                h="100%"
+                backgroundColor={"#f5f5dc"}
+                py="1rem"
+                pt="6rem"
+            >
                 <Heading color="orange.800" textAlign={"center"} mb="2rem">
                     Bebidas
                 </Heading>
@@ -30,7 +36,6 @@ const Bebidas = () => {
                                 <AccordionItem
                                     key={index}
                                     borderColor="rgba(182, 144, 119, 0.2)"
-                                    
                                     focusBorderColor="pink.400"
                                 >
                                     <AccordionButton>

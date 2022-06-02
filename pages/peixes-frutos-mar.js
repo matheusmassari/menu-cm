@@ -20,7 +20,7 @@ const PeixesMar = () => {
     return (
         <>
             <MotionNavigation />
-            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem">
+            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem" pt="6rem">
                 <Heading
                     fontFamily={"Allura, sans-serif"}
                     color="#8E3200"

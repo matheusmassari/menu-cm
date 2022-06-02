@@ -64,7 +64,7 @@ const DrawerNav = () => {
 
     return (
         <>
-            <Button onClick={onOpen} variant="none">
+            <Button onClick={onOpen} variant="none" mr="1rem">
                 <MotionIcon
                     animate={{
                         // translateX: [0, 5, 0],
@@ -78,12 +78,6 @@ const DrawerNav = () => {
                     }}
                 >
                     <GiCauldron size={40} color="#7B341E" />
-                    {/* <IconButton
-                        icon={<GiCauldron size={40} />}
-                        mr="1rem"
-                        variant={"none"}
-                        color="orange.800"
-                    ></IconButton> */}
                 </MotionIcon>
             </Button>
 
