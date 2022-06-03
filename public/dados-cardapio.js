@@ -6,7 +6,7 @@ export const CARDAPIO = {
             desc: "Porção com 10 unidades",
             valor: 35,
             categoria: "entradas",
-            img: "/ent-bolinho-peixe.jpeg",
+            img: "/ent-bolinho-peixe.jpg",
         },
         {
             id: 1,
@@ -14,7 +14,7 @@ export const CARDAPIO = {
             desc: "Porção com 10 unidades",
             valor: 35,
             categoria: "entradas",
-            img: "/ent-bolinho-sarnambi.jpeg",
+            img: "/ent-bolinho-sarnambi.jpg",
         },
         {
             id: 1,
@@ -22,7 +22,7 @@ export const CARDAPIO = {
             desc: "Unidade",
             valor: 18,
             categoria: "entradas",
-            img: "/ent-unha-caranguejo.jpeg",
+            img: "/ent-unha-caranguejo.jpg",
         },
         {
             id: 1,
@@ -30,7 +30,7 @@ export const CARDAPIO = {
             desc: "Porção",
             valor: 70,
             categoria: "entradas",
-            img: "/ent-camarao-alho-oleo.jpeg",
+            img: "/ent-camarao-alho-oleo.jpg",
         },
         {
             id: 1,
@@ -38,7 +38,7 @@ export const CARDAPIO = {
             desc: "Acompanha farofa e vinagrete (para 2 pessoas)",
             valor: 60,
             categoria: "entradas",
-            img: "/ent-espetinho-camarao.jpeg",
+            img: "/ent-espetinho-camarao.jpg",
         },
         {
             id: 1,
@@ -54,7 +54,7 @@ export const CARDAPIO = {
             desc: "Porção",
             valor: 70,
             categoria: "entradas",
-            img: "/ent-camarao-massari.jpeg",
+            img: "/ent-camarao-massari.jpg",
         },
         {
             id: 1,
@@ -62,7 +62,7 @@ export const CARDAPIO = {
             desc: "Porção",
             valor: 40,
             categoria: "entradas",
-            img: "/ent-iscas.jpeg",
+            img: "/ent-iscas.jpg",
         },
         {
             id: 1,
@@ -78,7 +78,7 @@ export const CARDAPIO = {
             desc: "Porção",
             valor: 65,
             categoria: "entradas",
-            img: "/ent-vinagrete-polvo.jpeg",
+            img: "/ent-vinagrete-polvo.jpg",
         },
         {
             id: 1,
