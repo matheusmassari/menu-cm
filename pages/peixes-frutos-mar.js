@@ -20,7 +20,13 @@ const PeixesMar = () => {
     return (
         <>
             <MotionNavigation />
-            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="1rem" pt="6rem">
+            <Box
+                w="100%"
+                h="100%"
+                backgroundColor={"#f5f5dc"}
+                py="1rem"
+                pt="6rem"
+            >
                 <Heading
                     fontFamily={"Allura, sans-serif"}
                     color="#8E3200"
@@ -69,7 +75,6 @@ const PeixesMar = () => {
                                                 boxSize="300px"
                                                 objectFit="cover"
                                                 borderRadius="8px"
-                                                border="2px solid #8E3200"
                                             />
                                         </Center>
                                         <Text
@@ -130,7 +135,6 @@ const PeixesMar = () => {
                                                 boxSize="300px"
                                                 objectFit="cover"
                                                 borderRadius="8px"
-                                                border="2px solid #8E3200"
                                             />
                                         </Center>
                                         <Text
@@ -191,7 +195,6 @@ const PeixesMar = () => {
                                                 boxSize="300px"
                                                 objectFit="cover"
                                                 borderRadius="8px"
-                                                border="2px solid #8E3200"
                                             />
                                         </Center>
                                         <Text

@@ -30,7 +30,23 @@ const Bebidas = () => {
                     Bebidas
                 </Heading>
 
-                <Accordion allowToggle>
+                {bebidas.map((bebida, index) => {
+                    const { titulo, valor, desc, categoria } = bebida;
+                    return (
+                        <Box
+                            key={index}
+                            borderBottom="1px solid rgba(182, 144, 119, 0.2)"
+                            display="flex"
+                            justifyContent="space-between"
+                            px="1rem"
+                            py="0.75rem"
+                        >
+                            <Text color="#8E3200">{titulo}</Text>
+                            <Text color="#8E3200">{valor}</Text>
+                        </Box>
+                    );
+                })}
+                {/* <Accordion allowToggle>
                     {bebidas.map((entrada, index) => {
                         const { titulo, valor, desc, categoria, img } = entrada;
                         if (categoria === "bebidas") {
@@ -82,7 +98,7 @@ const Bebidas = () => {
                             );
                         }
                     })}
-                </Accordion>
+                </Accordion> */}
                 <Heading
                     fontFamily={"Allura, sans-serif"}
                     color="#8E3200"
@@ -91,10 +107,28 @@ const Bebidas = () => {
                 >
                     Drinks
                 </Heading>
-                <Accordion allowToggle>
+                {bebidas.map((bebida, index) => {
+                    const { titulo, valor, desc, categoria } = bebida;
+                    if (categoria === "drinks") {
+                        return (
+                            <Box
+                                key={index}
+                                borderBottom="1px solid rgba(182, 144, 119, 0.2)"
+                                display="flex"
+                                justifyContent="space-between"
+                                px="1rem"
+                                py="0.75rem"
+                            >
+                                <Text color="#8E3200">{titulo}</Text>
+                                <Text color="#8E3200">{valor}</Text>
+                            </Box>
+                        );
+                    }
+                })}
+                {/* <Accordion allowToggle>
                     {bebidas.map((entrada, index) => {
                         const { titulo, valor, desc, categoria, img } = entrada;
-                        console.log(img)
+                        console.log(img);
                         if (categoria === "drinks") {
                             return (
                                 <AccordionItem key={index}>
@@ -129,7 +163,6 @@ const Bebidas = () => {
                                                 boxSize="300px"
                                                 objectFit="cover"
                                                 borderRadius="8px"
-                                                border="2px solid #8E3200"
                                             />
                                         </Center>
                                         <Text
@@ -143,7 +176,7 @@ const Bebidas = () => {
                             );
                         }
                     })}
-                </Accordion>
+                </Accordion> */}
             </Box>
         </>
     );

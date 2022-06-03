@@ -71,7 +71,7 @@ const Moquecas = () => {
                                             boxSize="300px"
                                             objectFit="cover"
                                             borderRadius="8px"
-                                            border="2px solid #8E3200"
+                                        
                                         />
                                     </Center>
                                     <Text

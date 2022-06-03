@@ -33,15 +33,33 @@ const Sobremesas = () => {
                 >
                     Sobremesas
                 </Heading>
-                <Accordion allowToggle>
+
+                {sobremesas.map((sobremesa, index) => {
+                    const { titulo, valor, desc, categoria } = sobremesa;
+                    return (
+                        <Box
+                            key={index}
+                            borderBottom="1px solid rgba(182, 144, 119, 0.2)"
+                            display="flex"
+                            justifyContent="space-between"
+                            px="1rem"
+                            py="0.75rem"
+                        >
+                            <Text color="#8E3200">{titulo}</Text>
+                            <Text color="#8E3200">{valor}</Text>
+                        </Box>
+                    );
+                })}
+                {/* <Accordion allowToggle>
                     {sobremesas.map((entrada, index) => {
                         const { titulo, valor, desc, categoria } = entrada;
                         return (
                             <AccordionItem
                                 key={index}
                                 borderColor="rgba(182, 144, 119, 0.2)"
+                                
                             >
-                                <h2>
+                                
                                     <AccordionButton>
                                         <Box flex="1" textAlign="left">
                                             <Text
@@ -61,7 +79,7 @@ const Sobremesas = () => {
                                             {valor}
                                         </Text>
                                     </AccordionButton>
-                                </h2>
+                                
                                 <AccordionPanel pb={4}>
                                     <Text
                                         color="black"
@@ -73,7 +91,7 @@ const Sobremesas = () => {
                             </AccordionItem>
                         );
                     })}
-                </Accordion>
+                </Accordion> */}
             </Box>
         </>
     );

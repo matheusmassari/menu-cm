@@ -382,7 +382,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 5,
             categoria: "bebidas",
-            img: "/2agua.png",
+            // img: "/2agua.png",
         },
         {
             id: 1,
@@ -390,7 +390,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 5,
             categoria: "bebidas",
-            img: "/1coco.png",
+            // img: "/1coco.png",
         },
         {
             id: 1,
@@ -398,7 +398,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 15,
             categoria: "bebidas",
-            img: "/1jarrac.png",
+            // img: "/1jarrac.png",
         },
         {
             id: 1,
@@ -406,7 +406,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 8,
             categoria: "bebidas",
-            img: "/1schweppes.png",
+            // img: "/1schweppes.png",
         },
         {
             id: 1,
@@ -414,7 +414,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 8,
             categoria: "bebidas",
-            img: "/1tonica.png",
+            // img: "/1tonica.png",
         },
         {
             id: 1,
@@ -422,7 +422,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 8,
             categoria: "bebidas",
-            img: "/1acqua.png",
+            // img: "/1acqua.png",
         },
         {
             id: 1,
@@ -430,7 +430,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 6,
             categoria: "bebidas",
-            img: "/1refri.png",
+            // img: "/1refri.png",
         },
         {
             id: 1,
@@ -438,7 +438,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1heineken0.png",
+            // img: "/1heineken0.png",
         },
         {
             id: 1,
@@ -446,7 +446,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 20,
             categoria: "bebidas",
-            img: "/1heineken600.png",
+            // img: "/1heineken600.png",
         },
         {
             id: 1,
@@ -454,7 +454,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1eisen.png",
+            // img: "/1eisen.png",
         },
         {
             id: 1,
@@ -462,7 +462,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1bohemia.png",
+            // img: "/1bohemia.png",
         },
         {
             id: 1,
@@ -470,7 +470,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1black.png",
+            // img: "/1black.png",
         },
         {
             id: 1,
@@ -478,7 +478,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1original.png",
+            // img: "/1original.png",
         },
         {
             id: 1,
@@ -486,7 +486,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 5,
             categoria: "bebidas",
-            img: "/1balde.png",
+            // img: "/1balde.png",
         },
         {
             id: 1,
@@ -494,7 +494,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 12,
             categoria: "bebidas",
-            img: "/1energetico.png",
+            // img: "/1energetico.png",
         },
         {
             id: 1,
@@ -502,7 +502,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "bebidas",
-            img: "/1whisky12.png",
+            // img: "/1whisky12.png",
         },
         {
             id: 1,
@@ -510,7 +510,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 20,
             categoria: "bebidas",
-            img: "/1whisky6.png",
+            // img: "/1whisky6.png",
         },
         {
             id: 1,
@@ -518,7 +518,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 15,
             categoria: "bebidas",
-            img: "/1campari.png",
+            // img: "/1campari.png",
         },
         {
             id: 1,
@@ -526,7 +526,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 30,
             categoria: "bebidas",
-            img: "/1rolha.png",
+            // img: "/1rolha.png",
         },
         {
             id: 1,
@@ -534,7 +534,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 20,
             categoria: "bebidas",
-            img: "/1busca.png",
+            // img: "/1busca.png",
         },
         {
             id: 1,
@@ -542,7 +542,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 10,
             categoria: "bebidas",
-            img: "/1ypioca.png",
+            // img: "/1ypioca.png",
         },
         {
             id: 1,
@@ -550,7 +550,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 5,
             categoria: "bebidas",
-            img: "/1cafe.png",
+            // img: "/1cafe.png",
         },
         {
             id: 1,
@@ -558,7 +558,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 30,
             categoria: "drinks",
-            img: "/2spritz.png",
+            // img: "/2spritz.png",
         },
         {
             id: 1,
@@ -566,7 +566,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2pina.png",
+            // img: "/2pina.png",
         },
         {
             id: 1,
@@ -574,14 +574,14 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2bob.png",
+            // img: "/2bob.png",
         },
         {
             id: 1,
             titulo: "Gin Tônica",
             desc: "",
             valor: 25,
-            img: "/2tonica.png",
+            // img: "/2tonica.png",
         },
         {
             id: 1,
@@ -589,7 +589,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2mojito.png",
+            // img: "/2mojito.png",
         },
         {
             id: 1,
@@ -597,7 +597,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -605,7 +605,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 90,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -613,7 +613,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 35,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -621,7 +621,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -629,7 +629,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 20,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -637,7 +637,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -645,7 +645,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 15,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -653,7 +653,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 20,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -661,7 +661,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -669,7 +669,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 30,
             categoria: "drinks",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -677,7 +677,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 10,
             categoria: "sucos",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -685,7 +685,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 10,
             categoria: "sucos",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -693,7 +693,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 10,
             categoria: "sucos",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -701,7 +701,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 10,
             categoria: "sucos",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
         {
             id: 1,
@@ -709,7 +709,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 25,
             categoria: "sucos",
-            img: "/2italiana.png",
+            // img: "/2italiana.png",
         },
     ],
     sobremesas: [
@@ -772,6 +772,7 @@ export const CARDAPIO = {
             desc: "",
             valor: 65,
             categoria: "semana",
+            img: "/prato-risoto-manga.png",
         },
         {
             id: 1,
@@ -787,7 +788,7 @@ export const CARDAPIO = {
             desc: "Deliciosa massa 'Grano Duro', servida com molho a base de creme de leite e frutos do mar",
             valor: 80,
             categoria: "semana",
-            img: "prato-camarao-tailandes.png",
+            img: "/prato-orichette.png",
         },
         {
             id: 1,
@@ -795,7 +796,7 @@ export const CARDAPIO = {
             desc: "Para duas pessoas: R$ 120",
             valor: 65,
             categoria: "semana",
-            img: "prato-camarao-tailandes.png",
+            img: "/prato-file-gorgonzola.png",
         },
         {
             id: 1,
@@ -803,7 +804,7 @@ export const CARDAPIO = {
             desc: "Filé de peixe fresco servido com delicioso molho a base de creme de leite, abacaxi e alcaparras - acompanha arroz branco e batatas salteadas. Para duas pessoas: R$ 120",
             valor: 65,
             categoria: "semana",
-            img: "prato-camarao-tailandes.png",
+            img: "/prato-alcaparras.png",
         },
         {
             id: 1,
@@ -811,7 +812,7 @@ export const CARDAPIO = {
             desc: "Camarões frescos servidos com delicioso molho a base de funghi, shoyu, manjericão e gengibre - acompanha arroz de coco e fatias de manga",
             valor: 65,
             categoria: "semana",
-            img: "prato-camarao-tailandes.png",
+            img: "/prato-camarao-tailandes.png",
         },
     ],
 };
