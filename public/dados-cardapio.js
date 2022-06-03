@@ -2,7 +2,7 @@ export const CARDAPIO = {
     entradas: [
         {
             id: 1,
-            titulo: "Bolinho de peixe com maionese de alho e coentro",
+            titulo: "Bolinho de Peixe com Maionese de Alho e Coentro",
             desc: "Porção com 10 unidades",
             valor: 35,
             categoria: "entradas",
@@ -10,7 +10,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Bolinho de sarnambi com maionese de alho e coentro",
+            titulo: "Bolinho de Sarnambi com Maionese de Alho e Coentro",
             desc: "Porção com 10 unidades",
             valor: 35,
             categoria: "entradas",
@@ -18,7 +18,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Unha de caranguejo GG",
+            titulo: "Unha de Caranguejo GG",
             desc: "Unidade",
             valor: 18,
             categoria: "entradas",
@@ -26,7 +26,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Camarão ao alho e óleo",
+            titulo: "Camarão ao Alho e Óleo",
             desc: "Porção",
             valor: 70,
             categoria: "entradas",
@@ -34,7 +34,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Brochete de camarão",
+            titulo: "Brochete de Camarão",
             desc: "Acompanha farofa e vinagrete (para 2 pessoas)",
             valor: 60,
             categoria: "entradas",
@@ -42,7 +42,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Tariobas ao molho de manteiga e Vinho Branco",
+            titulo: "Tariobas ao Molho de Manteiga e Vinho Branco",
             desc: "Porção",
             valor: 50,
             categoria: "entradas",
@@ -98,7 +98,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Filézinho trinchado com fritas",
+            titulo: "Filézinho Trinchado com Fritas",
             desc: "Porção",
             valor: 50,
             categoria: "entradas",
@@ -106,7 +106,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Batatas fritas",
+            titulo: "Batatas Fritas",
             desc: "Porção",
             valor: 25,
             categoria: "entradas",
@@ -122,7 +122,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Patinhas de caranguejo ao vinagrete",
+            titulo: "Patinhas de Caranguejo ao Vinagrete",
             desc: "Porção",
             valor: 65,
             categoria: "entradas",
@@ -673,7 +673,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Laranja",
+            titulo: "Suco Natural de Laranja",
             desc: "",
             valor: 10,
             categoria: "sucos",
@@ -681,7 +681,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Abacaxi",
+            titulo: "Suco Natural de Abacaxi",
             desc: "",
             valor: 10,
             categoria: "sucos",
@@ -689,7 +689,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Maracujá",
+            titulo: "Suco Natural de Maracujá",
             desc: "",
             valor: 10,
             categoria: "sucos",
@@ -697,7 +697,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Limão",
+            titulo: "Suco Natural de Limão",
             desc: "",
             valor: 10,
             categoria: "sucos",
@@ -705,7 +705,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Jarra",
+            titulo: "Jarra de Suco Natural",
             desc: "",
             valor: 25,
             categoria: "sucos",
@@ -738,7 +738,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Doce de Abóbora em Calda",
             desc: "",
-            valor: 15,
+            valor: 20,
             categoria: "sobremesas",
         },
         {
@@ -794,7 +794,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Filé Mignon ao Molho Gorgonzola",
             desc: "Para duas pessoas: R$ 120",
-            valor: 65,
+            valor: "65/120",
             categoria: "semana",
             img: "/prato-file-gorgonzola.png",
         },
@@ -802,7 +802,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Filé de Peixe ao Molho de Abacaxi com Alcaparras",
             desc: "Filé de peixe fresco servido com delicioso molho a base de creme de leite, abacaxi e alcaparras - acompanha arroz branco e batatas salteadas. Para duas pessoas: R$ 120",
-            valor: 65,
+            valor: "65/120",
             categoria: "semana",
             img: "/prato-alcaparras.png",
         },
@@ -810,7 +810,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Camarão ao Molho Tailandês",
             desc: "Camarões frescos servidos com delicioso molho a base de funghi, shoyu, manjericão e gengibre - acompanha arroz de coco e fatias de manga",
-            valor: 65,
+            valor: "65/120",
             categoria: "semana",
             img: "/prato-camarao-tailandes.png",
         },
