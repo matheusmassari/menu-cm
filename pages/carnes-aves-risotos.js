@@ -13,6 +13,7 @@ import {
     Image,
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
+import Footer from "./components/Footer"
 
 const CarnesAvesRisotos = () => {
     const { carnesAvesRisotos } = CARDAPIO;
@@ -21,10 +22,9 @@ const CarnesAvesRisotos = () => {
             <MotionNavigation />
             <Box
                 w="100%"
-                h="100%"
+                h={["100%", "90vh"]}
                 backgroundColor={"#f5f5dc"}
-                py="1rem"
-                pt="6rem"
+                py="6rem"
             >
                 <Heading
                     fontFamily={"Allura, sans-serif"}
@@ -82,6 +82,7 @@ const CarnesAvesRisotos = () => {
                     })}
                 </Accordion>
             </Box>
+            <Footer></Footer>
         </>
     );
 };

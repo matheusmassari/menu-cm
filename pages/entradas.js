@@ -13,6 +13,7 @@ import {
     Center,
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
+import Footer from "./components/Footer";
 
 const Entradas = () => {
     const { entradas } = CARDAPIO;
@@ -21,10 +22,9 @@ const Entradas = () => {
             <MotionNavigation />
             <Box
                 w="100%"
-                h="100%"
+                h={["100%", "90vh"]}
                 backgroundColor={"#f5f5dc"}
-                py="1rem"
-                pt="6rem"
+               py="6rem"
             >
                 <Heading
                     fontFamily={"Allura, sans-serif"}
@@ -86,6 +86,7 @@ const Entradas = () => {
                     })}
                 </Accordion>
             </Box>
+            <Footer></Footer>
         </>
     );
 };

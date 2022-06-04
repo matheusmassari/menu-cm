@@ -1,31 +1,15 @@
 import React from "react";
 import { CARDAPIO } from "../public/dados-cardapio";
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-    Box,
-    Text,
-    Heading,
-    Center,
-    Image,
-} from "@chakra-ui/react";
+import { Box, Text, Heading } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
+import Footer from "./components/Footer";
 
 const Bebidas = () => {
     const { bebidas } = CARDAPIO;
     return (
         <>
             <MotionNavigation />
-            <Box
-                w="100%"
-                h="100%"
-                backgroundColor={"#f5f5dc"}
-                py="1rem"
-                pt="6rem"
-            >
+            <Box w="100%" h="100%" backgroundColor={"#f5f5dc"} py="6rem">
                 <Heading color="orange.800" textAlign={"center"} mb="2rem">
                     Bebidas
                 </Heading>
@@ -178,6 +162,7 @@ const Bebidas = () => {
                     })}
                 </Accordion> */}
             </Box>
+            <Footer></Footer>
         </>
     );
 };

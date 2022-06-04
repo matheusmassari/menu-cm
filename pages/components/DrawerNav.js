@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import {
     IconButton,
@@ -17,12 +17,13 @@ import {
     Button,
 } from "@chakra-ui/react";
 import { BiMenuAltRight } from "react-icons/bi";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import NextLink from "next/link";
 import { GiCauldron } from "react-icons/gi";
 import { GrLinkPrevious } from "react-icons/gr";
 
 const MotionText = motion(Text);
+const MotionIcon = motion(Box);
 
 //////////////// CAUDERAO ANIMATION
 
@@ -36,27 +37,10 @@ const getRandomTransformOrigin = () => {
 };
 
 const getRandomDelay = () => -(Math.random() * 0.7 + 0.05);
-
 const randomDuration = () => Math.random() * 0.07 + 0.23;
-
-const variants = {
-    start: (i) => ({
-        rotate: i % 2 === 0 ? [-1, 1.3, 0] : [1, -1.4, 0],
-        transition: {
-            delay: getRandomDelay(),
-            repeat: Infinity,
-            duration: randomDuration(),
-        },
-    }),
-    reset: {
-        rotate: 0,
-    },
-};
 
 const DrawerNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
-
-    const MotionIcon = motion(Box);
 
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
@@ -64,17 +48,27 @@ const DrawerNav = () => {
 
     return (
         <>
-            <Button onClick={onOpen} variant="none" mr="1rem">
+            <Button
+                onClick={onOpen}
+                mr="1rem"
+                variant="none"
+                border="2px solid #7B341E"
+                borderRadius="50%"
+                py="2rem"
+                
+            >
                 <MotionIcon
                     animate={{
-                        // translateX: [0, 5, 0],
-                        translate3d: [-1, 0, 0],
+                        rotate: [-5, 10, 0],
+                        color: ["hsl(0, 100, 50)", "hsl(-120, 100, 50)"],
+                        transition: {
+                            delay: getRandomDelay(),
+                            repeat: Infinity,
+                            duration: randomDuration(),
+                        },
                     }}
-                    transition={{
-                        duration: 1,
-                        times: [0, 0.2, 0.5, 0, 8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 2,
+                    style={{
+                        ...getRandomTransformOrigin(),
                     }}
                 >
                     <GiCauldron size={40} color="#7B341E" />

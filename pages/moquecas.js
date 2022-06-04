@@ -13,6 +13,7 @@ import {
     Image
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
+import Footer from "./components/Footer";
 
 const Moquecas = () => {
     const { moquecas } = CARDAPIO;
@@ -21,10 +22,9 @@ const Moquecas = () => {
             <MotionNavigation />
             <Box
                 w="100%"
-                h="100%"
+                h={["100%", "90vh"]}
                 backgroundColor={"#f5f5dc"}
-                py="1rem"
-                pt="6rem"
+                py="6rem"
             >
                 <Heading
                     fontFamily={"Allura, sans-serif"}
@@ -71,7 +71,6 @@ const Moquecas = () => {
                                             boxSize="300px"
                                             objectFit="cover"
                                             borderRadius="8px"
-                                        
                                         />
                                     </Center>
                                     <Text
@@ -86,6 +85,7 @@ const Moquecas = () => {
                     })}
                 </Accordion>
             </Box>
+            <Footer></Footer>
         </>
     );
 };

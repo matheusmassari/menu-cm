@@ -46,7 +46,7 @@ const MotionNavigation = () => {
                     maxWidth: "100%",
                 }}
             >
-                <NextLink href="/" passHref>
+                {/* <NextLink href="/" passHref>
                     <MotionImage
                         w="8rem"
                         ml="0.5rem"
@@ -55,7 +55,8 @@ const MotionNavigation = () => {
                         alt="logomarca"
                         whileTap={{ scale: 1.2 }}
                     />
-                </NextLink>
+                </NextLink> */}
+                <div></div>
 
                 <DrawerNav />
             </MotionNav>

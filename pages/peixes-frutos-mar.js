@@ -13,6 +13,7 @@ import {
     Image,
 } from "@chakra-ui/react";
 import MotionNavigation from "./components/MotionNav";
+import Footer from "./components/Footer"
 
 const PeixesMar = () => {
     const { peixesFrutosMar } = CARDAPIO;
@@ -24,8 +25,8 @@ const PeixesMar = () => {
                 w="100%"
                 h="100%"
                 backgroundColor={"#f5f5dc"}
-                py="1rem"
-                pt="6rem"
+                py="7rem"
+               
             >
                 <Heading
                     fontFamily={"Allura, sans-serif"}
@@ -210,6 +211,7 @@ const PeixesMar = () => {
                     })}
                 </Accordion>
             </Box>
+            <Footer></Footer>
         </>
     );
 };
