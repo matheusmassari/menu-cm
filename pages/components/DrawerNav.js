@@ -53,14 +53,14 @@ const DrawerNav = () => {
                 mr="1rem"
                 variant="none"
                 border="2px solid #7B341E"
-                borderRadius="50%"
-                py="2rem"
-                
+                backgroundColor="#7B341E"
+                py="1.5rem"
+                px="0.5rem"
             >
                 <MotionIcon
                     animate={{
                         rotate: [-5, 10, 0],
-                        color: ["hsl(0, 100, 50)", "hsl(-120, 100, 50)"],
+
                         transition: {
                             delay: getRandomDelay(),
                             repeat: Infinity,
@@ -71,7 +71,7 @@ const DrawerNav = () => {
                         ...getRandomTransformOrigin(),
                     }}
                 >
-                    <GiCauldron size={40} color="#7B341E" />
+                    <GiCauldron size={40} color="#f5f5dc" />
                 </MotionIcon>
             </Button>
 
