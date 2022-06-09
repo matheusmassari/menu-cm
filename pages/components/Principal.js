@@ -15,7 +15,6 @@ import { CgInstagram } from "react-icons/cg";
 import { BsWhatsapp, BsPinMap } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-
 const Principal = () => {
     const [textColor, setTextColor] = useState("#f5f5dc");
     const [backgroundColor, setBackgroundColor] = useState("#d9ac8d");
@@ -40,11 +39,13 @@ const Principal = () => {
                 overflowY="hidden"
             >
                 <Center>
-                    <Image
-                        w="12rem"
-                        src="/massari-logo.png"
-                        alt="lavender-top"
-                    ></Image>
+                    <Box h="8rem" w="12rem" >
+                        <Image
+                            w="12rem"
+                            src="/massari-logo.png"
+                            alt="lavender-top"
+                        ></Image>
+                    </Box>
                 </Center>
                 <VStack spacing={3}>
                     <NextLink href="entradas" passHref>
