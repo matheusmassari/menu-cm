@@ -97,11 +97,14 @@ const DrawerNav = () => {
 
                     <DrawerBody>
                         <VStack spacing={4} mt="2rem">
-                            <Image
-                                w="12rem"
-                                src="/lavander-top.svg"
-                                alt="lavender-top"
-                            ></Image>
+                            <Box w="12rem" h="5rem">
+                                <Image
+                                    w="12rem"
+                                    src="/lavander-top.svg"
+                                    alt="lavender-top"
+                                ></Image>
+                            </Box>
+
                             <NextLink href="entradas" passHref>
                                 <Link style={{ textDecoration: "none" }}>
                                     <Heading
@@ -194,11 +197,13 @@ const DrawerNav = () => {
                                     </Heading>
                                 </Link>
                             </NextLink>
-                            <Image
-                                w="12rem"
-                                src="/lavander-bottom.svg"
-                                alt="lavender-top"
-                            ></Image>
+                            <Box w="12rem" h="5rem">
+                                <Image
+                                    w="12rem"
+                                    src="/lavander-bottom.svg"
+                                    alt="lavender-bottom"
+                                ></Image>
+                            </Box>
                         </VStack>
                     </DrawerBody>
                 </DrawerContent>
