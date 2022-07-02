@@ -432,7 +432,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Galinha Caipira sem sangue",
             desc: "acompanha arroz branco, farofa, salada verde e macarrão (para 3 pessoas)",
-            valor: 130,
+            valor: 150,
             categoria: "aves",
             img: "/prato-galinha-caipira.png",
         },
