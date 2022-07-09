@@ -207,9 +207,17 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Arroz de polvo com camarões na manteiga e lascas de alho",
+            titulo: "Arroz de Polvo com camarões na manteiga e lascas de alho",
             desc: "Imagem ILUSTRATIVA (Opção Lagosta) - Individual",
             valor: 80,
+            categoria: "peixes-frutos-mar",
+            img: "/prato-arroz-polvo-lagosta.png",
+        },
+        {
+            id: 1,
+            titulo: "Arroz de Polvo com Lagostas",
+            desc: "Imagem ILUSTRATIVA (Opção Lagosta) - Individual",
+            valor: 90,
             categoria: "peixes-frutos-mar",
             img: "/prato-arroz-polvo-lagosta.png",
         },
