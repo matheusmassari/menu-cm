@@ -34,6 +34,14 @@ export const CARDAPIO = {
         },
         {
             id: 1,
+            titulo: "Camarão Crocante",
+            desc: "Porção",
+            valor: 50,
+            categoria: "entradas",
+            img: "/ent-crocante.webp",
+        },
+        {
+            id: 1,
             titulo: "Brochete de Camarão",
             desc: "Acompanha farofa e vinagrete (para 2 pessoas)",
             valor: 60,
