@@ -39,7 +39,7 @@ const Principal = () => {
                 overflowY="hidden"
             >
                 <Center>
-                    <Box h="8rem" w="12rem" >
+                    <Box h="8rem" w="12rem">
                         <Image
                             w="12rem"
                             src="/massari-logo.png"
@@ -48,6 +48,17 @@ const Principal = () => {
                     </Box>
                 </Center>
                 <VStack spacing={3}>
+                    <NextLink href="eventos" passHref>
+                        <Link style={{ textDecoration: "none" }}>
+                            <MotionHeading
+                                color={headingColor}
+                                fontSize={"4xl"}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                Eventos
+                            </MotionHeading>
+                        </Link>
+                    </NextLink>
                     <NextLink href="entradas" passHref>
                         <Link style={{ textDecoration: "none" }}>
                             <MotionHeading
