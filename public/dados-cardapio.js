@@ -215,7 +215,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Arroz de Polvo com camarões na manteiga e lascas de alho",
+            titulo: "Arroz de Polvo com Camarões na Manteiga e Lascas de Alho",
             desc: "Imagem ILUSTRATIVA (Opção Lagosta) - Individual",
             valor: 80,
             categoria: "peixes-frutos-mar",
@@ -231,7 +231,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Orichette ao molho de frutos do mar com camarão branco",
+            titulo: "Orichette ao Molho de Frutos do Mar com Camarão Branco",
             desc: "IMAGEM ILUSTRATIVA* - Massa grano duro servida com delicioso molho de frutos do mar, sarnambi polvo, mexilhões e camarão - e base de creme de lei (Individual)",
             valor: 80,
             categoria: "peixes-frutos-mar",
@@ -247,7 +247,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Camarão ao molho Tailandês - Individual",
+            titulo: "Camarão ao Molho Tailandês - Individual",
             desc: "Delicioso molho à base de shoyu, funghi secchi, gengibre, pimenta dedo-de-moça e manjericão - Individual",
             valor: 65,
             categoria: "peixes-frutos-mar",
@@ -255,7 +255,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Camarão ao molho Tailandês - 2 Pessoas",
+            titulo: "Camarão ao Molho Tailandês - 2 Pessoas",
             desc: "Delicioso molho à base de shoyu, funghi secchi, gengibre, pimenta dedo-de-moça e manjericão - Individual ou 2 Pessoas",
             valor: 120,
             categoria: "peixes-frutos-mar",
@@ -280,7 +280,7 @@ export const CARDAPIO = {
 
         {
             id: 1,
-            titulo: "Filé de Peixe à belle Maniére - Individual",
+            titulo: "Filé de Peixe à Belle Maniére - Individual",
             desc: "Acompanha arroz de cuxá, batatas salteadas, camarões brancos e champignon - Individual ou 2 Pessoas",
             valor: 65,
             categoria: "peixes-frutos-mar",
@@ -288,7 +288,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Filé de Peixe à belle Maniére - 2 Pessoas",
+            titulo: "Filé de Peixe à Belle Maniére - 2 Pessoas",
             desc: "Acompanha arroz de cuxá, batatas salteadas, camarões brancos e champignon - Individual ou 2 Pessoas",
             valor: 120,
             categoria: "peixes-frutos-mar",
@@ -446,7 +446,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Galinha Caipira sem sangue",
+            titulo: "Galinha Caipira sem Sangue",
             desc: "acompanha arroz branco, farofa, salada verde e macarrão (para 3 pessoas)",
             valor: 150,
             categoria: "aves",
@@ -470,7 +470,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Risoto de Tomate seco com Rúcula e Filé Mignon",
+            titulo: "Risoto de Tomate Seco com Rúcula e Filé Mignon",
             desc: "",
             valor: 65,
             categoria: "risotos",
@@ -486,7 +486,7 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Risoto sem proteína",
+            titulo: "Risoto sem Proteína",
             desc: "",
             valor: 50,
             categoria: "risotos",
