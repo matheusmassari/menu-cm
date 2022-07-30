@@ -48,7 +48,7 @@ const Principal = () => {
                     </Box>
                 </Center>
                 <VStack spacing={3}>
-                    <NextLink href="eventos" passHref>
+                    {/* <NextLink href="eventos" passHref>
                         <Link style={{ textDecoration: "none" }}>
                             <MotionHeading
                                 color={headingColor}
@@ -58,7 +58,7 @@ const Principal = () => {
                                 Eventos
                             </MotionHeading>
                         </Link>
-                    </NextLink>
+                    </NextLink> */}
                     <NextLink href="entradas" passHref>
                         <Link style={{ textDecoration: "none" }}>
                             <MotionHeading
