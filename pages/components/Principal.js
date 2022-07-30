@@ -141,7 +141,17 @@ const Principal = () => {
                             </MotionHeading>
                         </Link>
                     </NextLink>
-
+                    <NextLink href="promo" passHref>
+                        <Link style={{ textDecoration: "none" }}>
+                            <MotionHeading
+                                color={headingColor}
+                                fontSize={"4xl"}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                Promoções
+                            </MotionHeading>
+                        </Link>
+                    </NextLink>
                     <HStack spacing={5}>
                         <NextLink
                             href="https://www.instagram.com/cozinhamassari/"

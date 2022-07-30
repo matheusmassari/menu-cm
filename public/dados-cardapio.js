@@ -957,4 +957,30 @@ export const CARDAPIO = {
             img: "/prato-camarao-tailandes.png",
         },
     ],
+    promo: [
+        {
+            id: 1,
+            titulo: "Chopp Dona",
+            desc: "",
+            valor: 6,
+            categoria: "semana",
+            img: "",
+        },
+        {
+            id: 1,
+            titulo: "Long Neck Imperio Lager",
+            desc: "",
+            valor: 6,
+            categoria: "semana",
+            img: "",
+        },
+        {
+            id: 1,
+            titulo: "Long Neck Imperio Gold",
+            desc: "",
+            valor: 6,
+            categoria: "semana",
+            img: "",
+        },
+    ],
 };
