@@ -48,6 +48,22 @@ const Principal = () => {
                     </Box>
                 </Center>
                 <VStack spacing={3}>
+                    {/* Atrações de Sexta CASO Houver */}
+                    {diaHoje[0] === "F" && (
+                        <NextLink href="eventos" passHref>
+                            <Link style={{ textDecoration: "none" }}>
+                                <MotionHeading
+                                    color={headingColor}
+                                    fontSize={"4xl"}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    Atrações da Sexta a Noite
+                                </MotionHeading>
+                            </Link>
+                        </NextLink>
+                    )}
+                    {/* Atrações de Sexta CASO FIM */}
+
                     {/* <NextLink href="eventos" passHref>
                         <Link style={{ textDecoration: "none" }}>
                             <MotionHeading

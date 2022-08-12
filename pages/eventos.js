@@ -23,7 +23,7 @@ const Eventos = () => {
                 </Heading>
                 <Center my="1rem">
                     <Image
-                        src="caymmi.jpeg"
+                        src="sexta.jpeg"
                         alt="bolinho"
                         // boxSize="300px"
                         // objectFit="cover"
@@ -31,7 +31,7 @@ const Eventos = () => {
                     />
                 </Center>
                 <Text mt="2rem" px="1rem">
-                    Um dos maiores expontes da MPB Danilo Caymmi, apresenta aqui
+                    {/* Um dos maiores expontes da MPB Danilo Caymmi, apresenta aqui
                     na Cozinha Massari o espetáculo VIVA CAYMMI, em homenagem à
                     obra do seu pai, Dorival Caymmi!! Uma noite emocionante com
                     músicas inesquecíveis em um show intimista, para um público
@@ -40,7 +40,7 @@ const Eventos = () => {
                     Dia 28/07 (quinta-feira). A casa abre às 19 horas. O show
                     começa às 22 horas. <br /> <br /> Abrindo a noite Marco
                     Antônio Brito nos vinis!! Não perca!!! <br /> <br />{" "}
-                    Informações e venda: (98)991710459
+                    Informações e venda: (98)991710459 */}
                 </Text>
             </Box>
             <Footer></Footer>
