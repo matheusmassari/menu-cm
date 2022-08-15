@@ -18,6 +18,13 @@ const theme = extendTheme({
             "*": {
                 boxSizing: "border-box",
             },
+            components: {
+                Link: {
+                    baseStyle: {
+                        textDecoration: "none"
+                    }
+                }
+            }
         },
     },
     fonts: {

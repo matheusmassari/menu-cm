@@ -14,6 +14,7 @@ import NextLink from "next/link";
 import { CgInstagram } from "react-icons/cg";
 import { BsWhatsapp, BsPinMap } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { homeLinks } from "../../helpers/home-links";
 
 const Principal = () => {
     const [textColor, setTextColor] = useState("#f5f5dc");
@@ -31,7 +32,7 @@ const Principal = () => {
     return (
         <>
             <Box
-                h={"calc(100vh)"}
+                h={["fit-content", "fit-content", "100vh", "100vh"]}
                 w={"100vw"}
                 boxSizing={"border-box"}
                 backgroundColor={backgroundColor}
@@ -48,126 +49,60 @@ const Principal = () => {
                     </Box>
                 </Center>
                 <VStack spacing={3}>
-                    {/* Atrações de Sexta CASO Houver */}
-                    {diaHoje[0] === "F" && (
-                        <NextLink href="eventos" passHref>
-                            <Link style={{ textDecoration: "none" }}>
-                                <MotionHeading
-                                    color={headingColor}
-                                    fontSize={"4xl"}
-                                    whileTap={{ scale: 0.9 }}
-                                >
-                                    Atrações da Sexta a Noite
-                                </MotionHeading>
-                            </Link>
-                        </NextLink>
-                    )}
-                    {/* Atrações de Sexta CASO FIM */}
+                    {homeLinks.map((link) => {
+                        const { href, titulo, dias, color } = link;
+                        if (dias === "todos") {
+                            return (
+                                <>
+                                    <NextLink href={href} passHref>
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                        >
+                                            <MotionHeading
+                                                color={color}
+                                                fontSize={"4xl"}
+                                                whileTap={{ scale: 0.9 }}
+                                            >
+                                                {titulo}
+                                            </MotionHeading>
+                                        </Link>
+                                    </NextLink>
+                                </>
+                            );
+                        }
+                        if (diaHoje[0] === "F" && dias === "sexta") {
+                            return (
+                                <NextLink href={href} passHref>
+                                    <Link style={{ textDecoration: "none" }}>
+                                        <MotionHeading
+                                            color={color}
+                                            fontSize={"4xl"}
+                                            whileTap={{ scale: 0.9 }}
+                                        >
+                                            {titulo}
+                                        </MotionHeading>
+                                    </Link>
+                                </NextLink>
+                            );
+                        }
+                        if (diaHoje[0] !== "F" && dias === "sab-dom") {
+                            return (
+                                <NextLink href={href} passHref>
+                                    <Link style={{ textDecoration: "none" }}>
+                                        <MotionHeading
+                                            color={color}
+                                            fontSize={"4xl"}
+                                            whileTap={{ scale: 0.9 }}
+                                        >
+                                            {titulo}
+                                        </MotionHeading>
+                                    </Link>
+                                </NextLink>
+                            );
+                        }
+                    })}
 
-                    {/* <NextLink href="eventos" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <MotionHeading
-                                color={headingColor}
-                                fontSize={"4xl"}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Eventos
-                            </MotionHeading>
-                        </Link>
-                    </NextLink> */}
-                    <NextLink href="entradas" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <MotionHeading
-                                color={textColor}
-                                fontSize={"4xl"}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Entradas
-                            </MotionHeading>
-                        </Link>
-                    </NextLink>
-                    {diaHoje[0] === "F" ? (
-                        <NextLink href="sexta" passHref>
-                            <Link style={{ textDecoration: "none" }}>
-                                <MotionHeading
-                                    color={textColor}
-                                    fontSize={"4xl"}
-                                    whileTap={{ scale: 0.9 }}
-                                >
-                                    Pratos Principais
-                                </MotionHeading>
-                            </Link>
-                        </NextLink>
-                    ) : (
-                        <>
-                            <NextLink href="moquecas" passHref>
-                                <Link style={{ textDecoration: "none" }}>
-                                    <MotionHeading
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        whileTap={{ scale: 0.9 }}
-                                    >
-                                        Moquecas
-                                    </MotionHeading>
-                                </Link>
-                            </NextLink>
-                            <NextLink href="peixes-frutos-mar" passHref>
-                                <Link style={{ textDecoration: "none" }}>
-                                    <MotionHeading
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        whileTap={{ scale: 0.9 }}
-                                    >
-                                        Peixes e Frutos do Mar
-                                    </MotionHeading>
-                                </Link>
-                            </NextLink>
-                            <NextLink href="carnes-aves-risotos" passHref>
-                                <Link style={{ textDecoration: "none" }}>
-                                    <MotionHeading
-                                        color={textColor}
-                                        fontSize={"4xl"}
-                                        whileTap={{ scale: 0.9 }}
-                                    >
-                                        Carnes, Aves e Risotos
-                                    </MotionHeading>
-                                </Link>
-                            </NextLink>
-                        </>
-                    )}
-                    <NextLink href="bebidas" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <MotionHeading
-                                color={textColor}
-                                fontSize={"4xl"}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Bebidas
-                            </MotionHeading>
-                        </Link>
-                    </NextLink>
-                    <NextLink href="sobremesas" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <MotionHeading
-                                color={textColor}
-                                fontSize={"4xl"}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Sobremesas
-                            </MotionHeading>
-                        </Link>
-                    </NextLink>
-                    <NextLink href="promo" passHref>
-                        <Link style={{ textDecoration: "none" }}>
-                            <MotionHeading
-                                color={headingColor}
-                                fontSize={"4xl"}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                Promoções
-                            </MotionHeading>
-                        </Link>
-                    </NextLink>
+                    {/* ÍCONES LINKS */}
                     <HStack spacing={5}>
                         <NextLink
                             href="https://www.instagram.com/cozinhamassari/"
@@ -241,8 +176,8 @@ const Principal = () => {
                     </HStack>
                 </VStack>
             </Box>
-            <Center>
-                <Box px="1rem" mt="-2rem">
+            <Center bgColor="#d9ac8d" h="4rem">
+                <Box px="1rem">
                     {" "}
                     <Text
                         fontFamily={"Poppins"}
