@@ -16,14 +16,14 @@ export const CARDAPIO = {
             categoria: "entradas",
             img: "/ent-bolinho-sarnambi.jpg",
         },
-        // {
-        //     id: 1,
-        //     titulo: "Unha de Caranguejo GG",
-        //     desc: "Unidade",
-        //     valor: 18,
-        //     categoria: "entradas",
-        //     img: "/ent-unha-caranguejo.jpg",
-        // },
+        {
+            id: 1,
+            titulo: "Unha de Caranguejo",
+            desc: "Porção contendo 3 unidades.",
+            valor: 50,
+            categoria: "entradas",
+            img: "/ent-unha-caranguejo.jpg",
+        },
         {
             id: 1,
             titulo: "Camarão ao Alho e Óleo",
@@ -972,14 +972,7 @@ export const CARDAPIO = {
             categoria: "sexta",
             img: "/prato-camarao-tailandes.png",
         },
-        {
-            id: 1,
-            titulo: "Unha de Caranguejo GG",
-            desc: "Porção com três unidades.",
-            valor: 50,
-            categoria: "entradas",
-            img: "/ent-unha-caranguejo.jpg",
-        },
+        
         // {
         //     id: 1,
         //     titulo: "Filé de Badejo Grelhado ao Molho de Mostarda Dijon com Legumes - Individual",

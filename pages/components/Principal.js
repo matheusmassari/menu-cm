@@ -72,17 +72,34 @@ const Principal = () => {
                         }
                         if (diaHoje[0] === "F" && dias === "sexta") {
                             return (
-                                <NextLink href={href} passHref>
-                                    <Link style={{ textDecoration: "none" }}>
-                                        <MotionHeading
-                                            color={color}
-                                            fontSize={"4xl"}
-                                            whileTap={{ scale: 0.9 }}
+                                <>
+                                    <NextLink href={href} passHref>
+                                        <Link
+                                            style={{ textDecoration: "none" }}
                                         >
-                                            {titulo}
-                                        </MotionHeading>
-                                    </Link>
-                                </NextLink>
+                                            <MotionHeading
+                                                color={color}
+                                                fontSize={"4xl"}
+                                                whileTap={{ scale: 0.9 }}
+                                            >
+                                                {titulo}
+                                            </MotionHeading>
+                                        </Link>
+                                    </NextLink>
+                                    <NextLink href="/vinhos" passHref>
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                        >
+                                            <MotionHeading
+                                                color={color}
+                                                fontSize={"4xl"}
+                                                whileTap={{ scale: 0.9 }}
+                                            >
+                                                Carta de Vinhos
+                                            </MotionHeading>
+                                        </Link>
+                                    </NextLink>
+                                </>
                             );
                         }
                         if (diaHoje[0] !== "F" && dias === "sab-dom") {
