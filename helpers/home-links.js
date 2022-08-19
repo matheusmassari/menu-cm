@@ -1,7 +1,7 @@
 export const homeLinks = [
     {
         href: "eventos",
-        titulo: "Atrações da Sexta a Noite",
+        titulo: "Atrações",
         dias: "todos",
         color: "#8E3200",
     },
