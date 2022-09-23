@@ -1,21 +1,21 @@
 export const CARDAPIO = {
     entradas: [
-        {
-            id: 1,
-            titulo: "Bolinho de Peixe com Maionese de Alho e Coentro",
-            desc: "Porção com 10 unidades",
-            valor: 35,
-            categoria: "entradas",
-            img: "/ent-bolinho-peixe.jpg",
-        },
-        {
-            id: 1,
-            titulo: "Bolinho de Sarnambi com Maionese de Alho e Coentro",
-            desc: "Porção com 10 unidades",
-            valor: 35,
-            categoria: "entradas",
-            img: "/ent-bolinho-sarnambi.jpg",
-        },
+        // {
+        //     id: 1,
+        //     titulo: "Bolinho de Peixe com Maionese de Alho e Coentro",
+        //     desc: "Porção com 10 unidades",
+        //     valor: 35,
+        //     categoria: "entradas",
+        //     img: "/ent-bolinho-peixe.jpg",
+        // },
+        // {
+        //     id: 1,
+        //     titulo: "Bolinho de Sarnambi com Maionese de Alho e Coentro",
+        //     desc: "Porção com 10 unidades",
+        //     valor: 35,
+        //     categoria: "entradas",
+        //     img: "/ent-bolinho-sarnambi.jpg",
+        // },
         {
             id: 1,
             titulo: "Unha de Caranguejo",
