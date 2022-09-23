@@ -1031,6 +1031,14 @@ export const CARDAPIO = {
             categoria: "semana",
             img: "",
         },
+        {
+            id: 1,
+            titulo: "Chopp Dona 300ml",
+            desc: "",
+            valor: 6,
+            categoria: "semana",
+            img: "",
+        },
     ],
     vinhos: [
         {
