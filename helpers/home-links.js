@@ -53,10 +53,10 @@ export const homeLinks = [
         dias: "todos",
         color: "#f5f5dc",
     },
-    {
-        href: "promo",
-        titulo: "Promoções",
-        dias: "todos",
-        color: "#8E3200",
-    },
+    // {
+    //     href: "promo",
+    //     titulo: "Promoções",
+    //     dias: "todos",
+    //     color: "#8E3200",
+    // },
 ];
