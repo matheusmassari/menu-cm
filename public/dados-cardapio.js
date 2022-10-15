@@ -128,14 +128,14 @@ export const CARDAPIO = {
             categoria: "entradas",
             img: "/ent-mexilhao.png",
         },
-        {
-            id: 1,
-            titulo: "Patinhas de Caranguejo ao Vinagrete",
-            desc: "Porção",
-            valor: 65,
-            categoria: "entradas",
-            img: "/ent-patinhas.png",
-        },
+        // {
+        //     id: 1,
+        //     titulo: "Patinhas de Caranguejo ao Vinagrete",
+        //     desc: "Porção",
+        //     valor: 65,
+        //     categoria: "entradas",
+        //     img: "/ent-patinhas.png",
+        // },
     ],
     moquecas: [
         {
@@ -402,22 +402,22 @@ export const CARDAPIO = {
             categoria: "na-brasa",
             img: "/peixe-arabaiana1.png",
         },
-        {
-            id: 1,
-            titulo: "Caranguejo Toc Toc",
-            desc: "5 caranguejos cozidos na água e sal, acompanhados de arroz de toucinho, farofa, pirão e vinagrete",
-            valor: 59.9,
-            categoria: "caranguejo",
-            img: "/caranguejo-toc.png",
-        },
-        {
-            id: 1,
-            titulo: "Caranguejo ao Molho",
-            desc: "5 caranguejos ensopados em delicioso molho com basede leite de coco, acompanhados de arroz de toucinho, farofa, pirão e vinagrete",
-            valor: 59.9,
-            categoria: "caranguejo",
-            img: "/caranguejo-toc.png",
-        },
+        // {
+        //     id: 1,
+        //     titulo: "Caranguejo Toc Toc",
+        //     desc: "5 caranguejos cozidos na água e sal, acompanhados de arroz de toucinho, farofa, pirão e vinagrete",
+        //     valor: 59.9,
+        //     categoria: "caranguejo",
+        //     img: "/caranguejo-toc.png",
+        // },
+        // {
+        //     id: 1,
+        //     titulo: "Caranguejo ao Molho",
+        //     desc: "5 caranguejos ensopados em delicioso molho com basede leite de coco, acompanhados de arroz de toucinho, farofa, pirão e vinagrete",
+        //     valor: 59.9,
+        //     categoria: "caranguejo",
+        //     img: "/caranguejo-toc.png",
+        // },
     ],
     carnesAvesRisotos: [
         {
