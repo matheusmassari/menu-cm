@@ -34,6 +34,14 @@ export const CARDAPIO = {
         },
         {
             id: 1,
+            titulo: "Polvo a Largareira servido com Batatas ao Murro",
+            desc: "Para 2 pessoas.",
+            valor: 100,
+            categoria: "entradas",
+            img: "",
+        },
+        {
+            id: 1,
             titulo: "Unha de Caranguejo",
             desc: "Porção contendo 3 unidades.",
             valor: 50,
