@@ -18,6 +18,22 @@ export const CARDAPIO = {
         // },
         {
             id: 1,
+            titulo: "Tesouros Do Mar",
+            desc: "Tábua com 2 tentáculos de polvo, 2 camarões rosa GG, mexilhões e tariobas. Acompanha pães franceses. Para 2 pessoas.",
+            valor: 120,
+            categoria: "entradas",
+            img: "",
+        },
+        {
+            id: 1,
+            titulo: "Camarões rosa GG ao alho e óleo (08 unidades)",
+            desc: "Tábua com 2 tentáculos de polvo, 2 camarões rosa GG, mexilhões e tariobas. Acompanha pães franceses. Para 2 pessoas.",
+            valor: 160,
+            categoria: "entradas",
+            img: "",
+        },
+        {
+            id: 1,
             titulo: "Unha de Caranguejo",
             desc: "Porção contendo 3 unidades.",
             valor: 50,
@@ -128,14 +144,14 @@ export const CARDAPIO = {
             categoria: "entradas",
             img: "/ent-mexilhao.png",
         },
-        // {
-        //     id: 1,
-        //     titulo: "Patinhas de Caranguejo ao Vinagrete",
-        //     desc: "Porção",
-        //     valor: 65,
-        //     categoria: "entradas",
-        //     img: "/ent-patinhas.png",
-        // },
+        {
+            id: 1,
+            titulo: "Patinhas de Caranguejo ao Vinagrete",
+            desc: "Porção",
+            valor: 65,
+            categoria: "entradas",
+            img: "/ent-patinhas.png",
+        },
     ],
     moquecas: [
         {
