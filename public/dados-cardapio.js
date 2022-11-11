@@ -26,6 +26,14 @@ export const CARDAPIO = {
         },
         {
             id: 1,
+            titulo: "Ostra GG - Servida com Ovas de Peixe Voador e Alga Wakame (unidade)",
+            desc: "",
+            valor: 10,
+            categoria: "entradas",
+            img: "",
+        },
+        {
+            id: 1,
             titulo: "Camarões rosa GG ao alho e óleo - 6 unidades",
             desc: "",
             valor: 90,
