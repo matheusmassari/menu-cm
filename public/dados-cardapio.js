@@ -26,9 +26,9 @@ export const CARDAPIO = {
         },
         {
             id: 1,
-            titulo: "Camarões rosa GG ao alho e óleo (08 unidades)",
-            desc: "Tábua com 2 tentáculos de polvo, 2 camarões rosa GG, mexilhões e tariobas. Acompanha pães franceses. Para 2 pessoas.",
-            valor: 160,
+            titulo: "Camarões rosa GG ao alho e óleo - 6 unidades",
+            desc: "",
+            valor: 90,
             categoria: "entradas",
             img: "",
         },
