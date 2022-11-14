@@ -32,7 +32,7 @@ const Principal = () => {
     return (
         <>
             <Box
-                h={["fit-content", "fit-content", "100vh", "100vh"]}
+                h={["100vh", "100vh", "100vh", "100vh"]}
                 w={"100vw"}
                 boxSizing={"border-box"}
                 backgroundColor={backgroundColor}
@@ -50,11 +50,11 @@ const Principal = () => {
                 </Center>
                 <VStack spacing={3}>
                     {homeLinks.map((link) => {
-                        const { href, titulo, dias, color } = link;
+                        const { href, titulo, dias, color, id } = link;
                         if (dias === "todos") {
                             return (
                                 <>
-                                    <NextLink href={href} passHref>
+                                    <NextLink href={href} passHref key={id}>
                                         <Link
                                             style={{ textDecoration: "none" }}
                                         >
@@ -72,26 +72,22 @@ const Principal = () => {
                         }
                         if (diaHoje[0] === "F" && dias === "sexta") {
                             return (
-                                
-                                    <NextLink href={href} passHref>
-                                        <Link
-                                            style={{ textDecoration: "none" }}
+                                <NextLink href={href} passHref key={id}>
+                                    <Link style={{ textDecoration: "none" }}>
+                                        <MotionHeading
+                                            color={color}
+                                            fontSize={"4xl"}
+                                            whileTap={{ scale: 0.9 }}
                                         >
-                                            <MotionHeading
-                                                color={color}
-                                                fontSize={"4xl"}
-                                                whileTap={{ scale: 0.9 }}
-                                            >
-                                                {titulo}
-                                            </MotionHeading>
-                                        </Link>
-                                    </NextLink>
-                                   
+                                            {titulo}
+                                        </MotionHeading>
+                                    </Link>
+                                </NextLink>
                             );
                         }
                         if (diaHoje[0] !== "F" && dias === "sab-dom") {
                             return (
-                                <NextLink href={href} passHref>
+                                <NextLink href={href} passHref key={id}>
                                     <Link style={{ textDecoration: "none" }}>
                                         <MotionHeading
                                             color={color}

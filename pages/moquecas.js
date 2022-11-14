@@ -22,7 +22,7 @@ const Moquecas = () => {
             <MotionNavigation />
             <Box
                 w="100%"
-                h={["100%", "90vh"]}
+                h={["90vh", "100vh"]}
                 backgroundColor={"#f5f5dc"}
                 py="6rem"
             >
