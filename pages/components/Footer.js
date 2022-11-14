@@ -27,6 +27,7 @@ const SocialButton = ({ children, label, href }) => {
             alignItems={"center"}
             justifyContent={"center"}
             transition={"background 0.3s ease"}
+            
         >
             <VisuallyHidden>{label}</VisuallyHidden>
             {children}
@@ -55,7 +56,7 @@ export default function LargeWithLogoLeft() {
                 align={{ base: "center", md: "center" }}
             >
                 <Image w="8rem" src="/massari-logo.png" alt="logo image" />
-                <Text color="orange.800">
+                <Text color="orange.800" textAlign={"center"} pb='1rem'>
                     © 2022 Cozinha Massari. Direitos Reservados
                 </Text>
                 <Stack direction={"row"} spacing={6}>
