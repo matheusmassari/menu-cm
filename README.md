@@ -2,7 +2,7 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 
-Website Link [site](https://menumassari.netlify.app/).
+Website [link](https://menumassari.netlify.app/).
 
 ## Infos
 
