@@ -27,7 +27,9 @@ const Principal = () => {
 
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
-    const diaHoje = today.toDateString();
+    // const diaHoje = today.toDateString();
+    const diaHoje = 'Friday'
+    
 
     return (
         <>

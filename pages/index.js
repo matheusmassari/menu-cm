@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Principal from "./components/Principal";
+import Principal from "./components/Home";
 
 
 export default function Home() {
