@@ -156,7 +156,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Vinagrete de Mexilhão",
             desc: "Porção",
-            valor: 25,
+            valor: 50,
             categoria: "entradas",
             img: "/ent-mexilhao.png",
         },
