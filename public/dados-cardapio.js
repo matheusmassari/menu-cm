@@ -421,7 +421,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Arabaiana Inteira Assada na Brasa - 4 Pessoas",
             desc: "Acompanha arroz branco, farofa e vinagrete",
-            valor: 180,
+            valor: 240,
             categoria: "na-brasa",
             img: "/peixe-arabaiana1.png",
         },
