@@ -817,7 +817,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Caipirinha",
             desc: "",
-            valor: 15,
+            valor: 20,
             categoria: "drinks",
             // img: "/2italiana.png",
         },
