@@ -92,7 +92,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Camarão Massari",
             desc: "Porção",
-            valor: 70,
+            valor: 80,
             categoria: "entradas",
             img: "/ent-camarao-massari.jpg",
         },
