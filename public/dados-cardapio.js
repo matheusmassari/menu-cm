@@ -100,7 +100,7 @@ export const CARDAPIO = {
             id: 1,
             titulo: "Iscas de Peixe",
             desc: "Porção",
-            valor: 40,
+            valor: 50,
             categoria: "entradas",
             img: "/ent-iscas.jpg",
         },
